@@ -37,7 +37,7 @@ Omnibus:                       43.390   Durbin-Watson:                   2.166
 Prob(Omnibus):                  0.000   Jarque-Bera (JB):               76.802
 Skew:                           0.932   Prob(JB):                     2.10e-17
 Kurtosis:                       4.981   Cond. No.                     3.55e+03
-==============================================================================
+==============================================================================```
 The model explains about half the day-to-day variation in dispersion
 (R² = 0.498), with market_return_sq the clear driver of that
 relationship (coef = 10.48, p < 0.001).
