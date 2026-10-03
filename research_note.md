@@ -25,19 +25,22 @@ behavior.
 - 249 daily observations after cleaning
 
 ## Result
-```text
-==============================================================================
-                                 coef    std err          t      P>|t|      [0.025      0.975]
-------------------------------------------------------------------------------
-const                          0.0086      0.001     13.695      0.000       0.007       0.010
-market_return_abs             -0.1039      0.062     -1.671      0.096      -0.226       0.019
-market_return_sq              10.4842      1.180      8.888      0.000       8.161      12.808
-==============================================================================
-Omnibus:                       43.390   Durbin-Watson:                   2.166
-Prob(Omnibus):                  0.000   Jarque-Bera (JB):               76.802
-Skew:                           0.932   Prob(JB):                     2.10e-17
-Kurtosis:                       4.981   Cond. No.                     3.55e+03
-==============================================================================```
+
+| Variable | coef | std err | t | P>\|t\| | [0.025 | 0.975] |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **const** | 0.0086 | 0.001 | 13.695 | 0.000 | 0.007 | 0.010 |
+| **market_return_abs** | -0.1039 | 0.062 | -1.671 | 0.096 | -0.226 | 0.019 |
+| **market_return_sq** | 10.4842 | 1.180 | 8.888 | 0.000 | 8.161 | 12.808 |
+
+<br>
+
+| Metric | Value | Metric | Value |
+| :--- | :--- | :--- | :--- |
+| **Omnibus:** | 43.390 | **Durbin-Watson:** | 2.166 |
+| **Prob(Omnibus):** | 0.000 | **Jarque-Bera (JB):** | 76.802 |
+| **Skew:** | 0.932 | **Prob(JB):** | 2.10e-17 |
+| **Kurtosis:** | 4.981 | **Cond. No.** | 3.55e+03 |
+
 The model explains about half the day-to-day variation in dispersion
 (R² = 0.498), with market_return_sq the clear driver of that
 relationship (coef = 10.48, p < 0.001).
